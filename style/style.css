@@ -18,6 +18,10 @@ header {
     background-color: rgb(230, 24, 24);
 }
 
+header a {
+    text-decoration: none;
+}
+
 nav {
     background-color: #333;
     overflow: hidden;
