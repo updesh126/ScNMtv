@@ -57,7 +57,8 @@ video {
 }
 
 iframe {
-    height: 40vh;
+    width:  auto;
+    height: auto;
 }
 
 img {
