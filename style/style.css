@@ -90,7 +90,7 @@ section h5 {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgb(202, 65, 65);
     overflow: hidden;
 }
 
@@ -125,7 +125,7 @@ nav {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #aaa;
+    color: rgb(247, 224, 224);
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
@@ -136,7 +136,7 @@ nav {
     transition: all .5s;
   }
   nav ul li a:hover {
-    color: #555;
+    color: rgb(134, 74, 74);
   }
   
   
