@@ -163,7 +163,8 @@ nav {
   }
 
 .topnav-right{
-    float: right;
+    /* float: right; */
+    margin: auto;
 }
 .Message{
     color: whitesmoke;
