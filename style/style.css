@@ -33,7 +33,25 @@ nav a {
     text-align: center;
     float: left;
     color: white;
+    position: relative;
 }
+
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.35rem;
+    left: 0;
+    bottom: 0;
+    background: red;
+    transform: scale(0,1);
+    transition: transform 0.5s ease;
+}
+
+nav a:hover::after{
+    transform: scale(1,1);
+}
+
 
 main {
     background-color: white;
