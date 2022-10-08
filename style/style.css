@@ -38,6 +38,7 @@ nav a {
 } */
 
 
+
 nav a::after{
     content: '';
     position: absolute;
@@ -116,8 +117,10 @@ nav {
   }
   nav ul {
     list-style: none;
+    align-items: center;
     text-align: center;
   }
+  
   nav ul li {
     display: inline-block;
   }
