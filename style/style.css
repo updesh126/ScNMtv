@@ -10,7 +10,7 @@ body {
 header h1 {
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: rgb(246, 243, 243);
 }
 
 header {
@@ -45,7 +45,7 @@ h2 {
 }
 
 section:nth-child(even) {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(249, 243, 243);
 }
 
 section {
