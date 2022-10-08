@@ -162,8 +162,8 @@ nav {
     width: 100%;
   }
 
+  /* will bring navbar to center  */
 .topnav-right{
-    /* float: right; */
     margin: auto;
 }
 .Message{
