@@ -91,7 +91,7 @@ section h5 {
 }
 
 footer {
-    background-color: rgb(202, 65, 65);
+    background-color: rgb(235, 213, 213);
     overflow: hidden;
 }
 
@@ -100,7 +100,7 @@ footer a {
     padding: 20px;
     text-align: center;
     float: left;
-    color: white;
+    color: rgb(110, 63, 63);
 }
 
 .circular {
