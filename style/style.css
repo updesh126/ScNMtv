@@ -16,6 +16,7 @@ header h1 {
 header {
     padding: 10px;
     background-color: rgb(207, 184, 184);
+
 }
 
 header a {
@@ -91,6 +92,7 @@ section h5 {
 }
 
 footer {
+
     background-color: rgb(54, 24, 24);
     overflow: hidden;
 }
@@ -100,7 +102,7 @@ footer a {
     padding: 20px;
     text-align: center;
     float: left;
-    color: white;
+    color: rgb(110, 63, 63);
 }
 
 .circular {
