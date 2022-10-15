@@ -9,8 +9,40 @@ body {
 
 header h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 8rem;
     color: rgb(246, 243, 243);
+
+
+
+}
+
+/*Adding animation to the header*/
+
+header h1{
+content: "ScNMtv";
+width:50%;
+color: white;
+position: relative;
+top:0%;
+left:0%;
+border-right: 0.4rem solid white;
+animation: slide 2s linear infinite;
+-webkit-animation: slide 3s linear infinite;
+overflow: hidden;
+
+}
+
+@keyframes slide {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+    
 }
 /* header updated */
 header {
