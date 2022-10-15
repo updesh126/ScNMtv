@@ -30,6 +30,7 @@ animation: slide 2s linear infinite;
 -webkit-animation: slide 3s linear infinite;
 overflow: hidden;
 
+
 }
 
 @keyframes slide {
@@ -44,6 +45,8 @@ overflow: hidden;
     }
     
 }
+
+
 /* header updated */
 header {
     padding: 10px;
@@ -104,7 +107,15 @@ section:nth-child(even) {
 
 section {
     min-height: 100vh;
+    text-decoration: underline;
 }
+
+section :hover{
+    color:#111;
+    background: #d45364;
+    box-shadow:  0 0 50px #d45364;
+} 
+
 /* video edited */
 video {
     padding: 10px;
@@ -203,6 +214,14 @@ nav {
   /* will bring navbar to center  */
 .topnav-right{
     margin: auto;
+    border-style: groove;
+    text-shadow: #aaa;
+    text-decoration: wavy;
+}
+.topnav-right :hover{
+    color:#111;
+    background: #d45364;
+    box-shadow:  0 0 50px #d45364;
 }
 .Message{
     color: whitesmoke;
