@@ -178,14 +178,12 @@ footer a {
 
 /**********STROKES**********/
 nav {
-   nav {
-    width: auto;
+    width: 80%;
     margin: 0 auto;
-    background: rgb(0 0 0 / 80%);
+    background: #181818;
     padding-bottom: 0%;
-    padding: 0px 0;
-    box-shadow: 0px 0px 0px;
-  }
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px;
   }
   nav ul {
     list-style: none;
