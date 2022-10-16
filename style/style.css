@@ -278,3 +278,7 @@ nav {
     color: var(--color-grey-2);
     pointer-events: none;
   }
+  main{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
