@@ -24,7 +24,7 @@
     <meta property="og:description"
         content="ScNMtv (Science aNd Movies T.V ) is a place where you can get all the best movie suggestions and reviews of newly coming or upcoming movies " />
     <meta property="og:image" content="https://github.com/updesh126/ScNMtv/blob/main/image/logo.jpg" />
-     <!--title-->
+    <!--title-->
     <title>ScNMtv</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -44,52 +44,53 @@
 
     <nav class="stroke topnav">
         <ul class="topnav-right">
-          <li><a href="index.html">Home </a></li>
-          <div class="content">
-          <li><a href="page0.html">New Movies</a></li>
-          <li><a href="page1.html">Movies Review</a></li>
-          <li><a href="page2.html">Science</a></li>
-          <li><a href="page3.html">Login</a></li></div>
-          
-          
+            <li><a href="index.html">Home </a></li>
+            <div class="content">
+                <li><a href="page0.html">New Movies</a></li>
+                <li><a href="page1.html">Movies Review</a></li>
+                <li><a href="page2.html">Science</a></li>
+                <li><a href="page3.html">Login</a></li>
+            </div>
+
+
         </ul>
-      </nav>
+    </nav>
 
 
     <main>
         <section>
             <h2>New Movies</h2>
-           
-            <video id="video-1" class="video-bg" width="320" height="240"  poster="image/Pushpa.jpg"controls>
+
+            <video id="video-1" class="video-bg" width="320" height="240" poster="image/Pushpa.jpg" controls>
                 <source src="./videos/Pushpa.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              
-              <video id="video-2" class="video-bg" width="320" height="240"poster="image/rrr.jpg"  controls>
+                Your browser does not support the video tag.
+            </video>
+
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/rrr.jpg" controls>
                 <source src="./videos/RRR.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <video id="video-2" class="video-bg" width="320" height="240"poster="image/Radhe_Shyam.jpg"  controls>
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/Radhe_Shyam.jpg" controls>
                 <source src="./videos/Radhe_Shyam.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <video id="video-2" class="video-bg" width="320" height="240"poster="image/unch.jpg"   controls>
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/unch.jpg" controls>
                 <source src="./videos/UNCHARTED.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <video id="video-2" class="video-bg" width="320" height="240"poster="image/death_on_the_nile.jpg"  controls>
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/death_on_the_nile.jpg" controls>
                 <source src="./videos/Death_on_the_Nile.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <video id="video-2" class="video-bg" width="320" height="240" poster="image/jersey.jpeg" controls>
-                <source src="./videos/Jersey.mp4"  type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/jersey.jpeg" controls>
+                <source src="./videos/Jersey.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
         <section>
             <h2>Movies Review</h2>
-            <iframe width="560" height="315"src="https://www.youtube.com/embed/i5HVOrih-EI" title="YouTube video player"
-                frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i5HVOrih-EI"
+                title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
@@ -212,20 +213,20 @@
     </footer>
     <script type="text/javascript">
         // assume only one video is playing at a time
-var videoPlaying = null;
+        var videoPlaying = null;
 
-const onPlay = function() {
-  if (videoPlaying && videoPlaying != this) {
-    videoPlaying.pause()
-  }
-  videoPlaying = this
-}
+        const onPlay = function () {
+            if (videoPlaying && videoPlaying != this) {
+                videoPlaying.pause()
+            }
+            videoPlaying = this
+        }
 
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-  videos[i].addEventListener("play", onPlay)
-} 
+        // init event handler
+        const videos = document.getElementsByClassName("video-bg")
+        for (let i = 0; i < videos.length; i++) {
+            videos[i].addEventListener("play", onPlay)
+        }
 
     </script>
 </body>
