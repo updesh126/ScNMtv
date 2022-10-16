@@ -13,4 +13,11 @@ ReactDOM.render(<App />, document.getElementById("root"));
 //2. Making use of previous state when changing state.
 //3. Working with forms in React.
 //4. Handing events
-
+function PageTransitions(){
+const themeBtn = document.querySelector('.theme-btn');
+themeBtn.addEventListener('click', ()=>{
+    let element = document.body;
+    element.classList.toggle('light-mode');
+})
+}
+PageTransitions();
