@@ -1,5 +1,10 @@
 # ScNMtv
 This is my prototype website 
+# Rules for Hacktoberfest2k22
+- just push your idea and imagination
+- create issue or just discuss in Discussion tab
+- Go For it
+
 
 
 ![hacktoberfest2022](https://user-images.githubusercontent.com/77198464/194723525-cb906856-6aab-40fc-b1b9-ff657ba11088.png)
