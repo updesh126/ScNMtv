@@ -1,5 +1,10 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+form {border: 3px solid #f1f1f1;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%; 
+}
 
 input[type=text], input[type=password] {
   width: 100%;
