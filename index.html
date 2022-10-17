@@ -24,7 +24,7 @@
     <meta property="og:description"
         content="ScNMtv (Science aNd Movies T.V ) is a place where you can get all the best movie suggestions and reviews of newly coming or upcoming movies " />
     <meta property="og:image" content="https://github.com/updesh126/ScNMtv/blob/main/image/logo.jpg" />
-     <!--title-->
+    <!--title-->
     <title>ScNMtv</title>
     <link rel="stylesheet" href="style/style.css">
 
@@ -48,6 +48,21 @@
 
     <nav class="stroke topnav">
         <ul class="topnav-right">
+
+            <li><a href="index.html">Home </a></li>
+            <div class="content">
+                <li><a href="page0.html">New Movies</a></li>
+                <li><a href="page1.html">Movies Review</a></li>
+                <li><a href="page2.html">Science</a></li>
+                <li><a href="page3.html">Login</a></li>
+            </div>
+
+
+        </ul>
+    </nav>
+
+
+
           <div class="content">
           <li><a href="index.html">Home </a></li>
           <li><a href="page0.html">New Movies</a></li>
@@ -58,24 +73,41 @@
           
         </ul>
       </nav>
+
     <main>
         <section>
             <h2>New Movies</h2>
-            <video src="videos/Pushpa.mp4" width="25.5%"  poster="image/Pushpa.jpg" controls></video>
-            <video src="videos/RRR.mp4" width="32%" poster="image/rrr.jpg" controls></video>
-            <video src="videos/Radhe_Shyam.mp4" width="31%" poster="image/Radhe_Shyam.jpg" controls></video>
-            <br>
-            <br>
-            <br>
-            <video src="videos/UNCHARTED.mp4" width="32%" poster="image/unch.jpg" controls></video>
-            <video src="videos/Death_on_the_Nile.mp4" width="32%" poster="image/death_on_the_nile.jpg" controls></video>
-            <video src="videos/Jersey.mp4" width="32%" poster="image/jersey.jpeg" controls></video>
 
+            <video id="video-1" class="video-bg" width="320" height="240" poster="image/Pushpa.jpg" controls>
+                <source src="./videos/Pushpa.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/rrr.jpg" controls>
+                <source src="./videos/RRR.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/Radhe_Shyam.jpg" controls>
+                <source src="./videos/Radhe_Shyam.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/unch.jpg" controls>
+                <source src="./videos/UNCHARTED.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/death_on_the_nile.jpg" controls>
+                <source src="./videos/Death_on_the_Nile.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video-2" class="video-bg" width="320" height="240" poster="image/jersey.jpeg" controls>
+                <source src="./videos/Jersey.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
         <section>
             <h2>Movies Review</h2>
-            <iframe width="560" height="315"src="https://www.youtube.com/embed/i5HVOrih-EI" title="YouTube video player"
-                frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i5HVOrih-EI"
+                title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
@@ -201,7 +233,28 @@
         <a href="https://www.instagram.com/scnmtv/">Instagram</a>
         <a href="#">&copy; 2020 | ScNMtv</a>
     </footer>
+
+    <script type="text/javascript">
+        // assume only one video is playing at a time
+        var videoPlaying = null;
+
+        const onPlay = function () {
+            if (videoPlaying && videoPlaying != this) {
+                videoPlaying.pause()
+            }
+            videoPlaying = this
+        }
+
+        // init event handler
+        const videos = document.getElementsByClassName("video-bg")
+        for (let i = 0; i < videos.length; i++) {
+            videos[i].addEventListener("play", onPlay)
+        }
+
+    </script>
+
     <script src="./style/index.js"></script>
+
 </body>
 
 </html>
