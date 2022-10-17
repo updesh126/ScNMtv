@@ -22,45 +22,30 @@
     <meta property="og:url" content="https://updesh126.github.io/ScNMtv/" />
     <meta property="og:title" content="Website" />
     <meta property="og:description"
-        content="ScNMtv (Science aNd Movies T.V ) is a place where you can get all the best movie suggestions and reviews of newly coming or upcoming movies " />
+        content="ScNMtv (Science aNd Movies T.V ) is a place where you can get the best movie suggestions and reviews of newly coming or upcoming movies" />
     <meta property="og:image" content="https://github.com/updesh126/ScNMtv/blob/main/image/logo.jpg" />
-    <!--title-->
-    <title>ScNMtv</title>
+     <!--Title-->
+    <title>ScNMtv|New Movies</title>
     <link rel="stylesheet" href="style/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <!--Header-->
-        <h1>ScNMTv</h1>
+         <!--Header-->
+        <a href="https://updesh126.github.io/ScNMtv"><h1>ScNMtv</h1></a>
     </header>
-    <!-- <nav class="stroke topnav">
-        <a href="index.html">Home</a>
-        <a href="page0.html">New Movies</a>
-        <a href="page1.html">Movies Review</a>
-        <a href="page2.html">Science</a>
-        <a href="#">Login</a>
-    </nav> -->
-
     <nav class="stroke topnav">
         <ul class="topnav-right">
-            <div class="content">
-                <li><a href="index.html">Home </a></li>
-                <li><a href="page0.html">New Movies</a></li>
-                <li><a href="page1.html">Movies Review</a></li>
-                <li><a href="page2.html">Science</a></li>
-                <li><a href="page3.html">Login</a></li>
-            </div>
-
-
+          <li><a href="index.html">Home </a></li>
+          <li><a href="page0.html">New Movies</a></li>
+          <li><a href="page1.html">Movies Review</a></li>
+          <li><a href="page2.html">Science</a></li>
+          <li><a href="page3.html">Login</a></li>
+          
         </ul>
-    </nav>
-
-    <main>
+      </nav>
+   
+     <main>
         <section>
             <h2>New Movies</h2>
 
@@ -208,39 +193,12 @@
 
     </main>
 
-    
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-      </div>
-
     <footer>
-        <a href="https://www.youtube.com/channel/UCKn8LcrUSyCk3osE9pU9Bxw">YouTube</a>
-        <a href="https://twitter.com/pratap_updesh">Twitter</a>
-        <a href="https://www.instagram.com/scnmtv/">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCKn8LcrUSyCk3osE9pU9Bxw" target="_blank">YouTube</a>
+        <a href="https://twitter.com/pratap_updesh" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/scnmtv/" target="_blank">Instagram</a>
         <a href="#">&copy; 2020 | ScNMtv</a>
     </footer>
-
-    <script type="text/javascript">
-        // assume only one video is playing at a time
-        var videoPlaying = null;
-
-        const onPlay = function () {
-            if (videoPlaying && videoPlaying != this) {
-                videoPlaying.pause()
-            }
-            videoPlaying = this
-        }
-
-        // init event handler
-        const videos = document.getElementsByClassName("video-bg")
-        for (let i = 0; i < videos.length; i++) {
-            videos[i].addEventListener("play", onPlay)
-        }
-
-    </script>
-
-    <script src="./style/index.js"></script>
-
 </body>
 
 </html>
